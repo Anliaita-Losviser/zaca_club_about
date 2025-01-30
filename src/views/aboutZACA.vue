@@ -34,7 +34,7 @@ import MainContents from '@/components/MainContents.vue';
         align-content: center;
     }
     .main{
-        background-image: url(../assets/background.png);
+        background-image: url(../assets/background.jpg);
         background-size:cover;
         background-position: center;
     }
