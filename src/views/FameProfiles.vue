@@ -36,7 +36,7 @@ import avatar from "@/assets/example_Avatar2.jpg"
     .main {
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)75%, rgba(255, 255, 255, 1)100%),
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4)75%, rgba(255, 255, 255, 1)100%),
             url(../assets/example_personal_background.png);
         background-size: cover;
         background-position: center;
@@ -68,7 +68,7 @@ import avatar from "@/assets/example_Avatar2.jpg"
                 align-items: center;
                 text-align: center;
 
-                backdrop-filter: blur(5px);
+                backdrop-filter: blur(10px);
                 border: 2px solid black;
                 border-radius: 20px;
                 .avatar{

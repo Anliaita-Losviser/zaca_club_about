@@ -30,7 +30,7 @@ import FameList from "@/components/HallOfFame/FameList.vue";
     .main {
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(to bottom, rgba(255,255,255,0)75%, rgba(255,255,255,1)100%),
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.4)75%, rgba(255,255,255,1)100%),
         url(../assets/background_hallOfFame.jpg);
         background-size: cover;
         background-position: center;

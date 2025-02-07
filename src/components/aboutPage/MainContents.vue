@@ -44,7 +44,7 @@ const pushToHallOfFame = () => {
     align-items: center;
     text-align: center;
 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     border: 2px solid black;
     border-radius: 20px;
 
@@ -68,7 +68,7 @@ const pushToHallOfFame = () => {
     justify-content: space-around;
     align-items: center;
 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     border: 2px solid black;
     border-radius: 20px;
 
@@ -79,6 +79,7 @@ const pushToHallOfFame = () => {
       font-size: 2rem;
       line-height: 1.75rem;
       text-align: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
     .button{
       width: 100px;

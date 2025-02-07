@@ -24,8 +24,8 @@ const pushToProfile = () =>{
   flex-direction: column;
   justify-content: end;
 
-  width: 200px;
-  height: 300px;
+  max-width: 200px;
+  max-height: 300px;
 
   margin:8px;
   overflow: hidden;
@@ -40,6 +40,7 @@ const pushToProfile = () =>{
 }
 .nameBoard {
   position: absolute;
+  font-size: medium;
 
   display: flex;
   z-index:2;
