@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <el-icon size="24" color="rgb(255 255 255)">
+        <el-icon size="24" color="rgb(255 255 255)" @click="back">
             <ArrowLeftBold />
         </el-icon>
         <div class="title">
@@ -14,6 +14,11 @@
 
 <script setup>
 import { ArrowLeftBold } from '@element-plus/icons-vue';
+import { useRouter } from 'vue-router';
+const router = useRouter()
+const back = ()=>{
+    router.back()
+}
 </script>
 
 <style lang="less" scoped>

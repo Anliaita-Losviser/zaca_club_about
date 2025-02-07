@@ -31,7 +31,7 @@ import MainContents from "@/components/aboutPage/MainContents.vue";
         width: 100%;
         height: 100%;
         background-image: linear-gradient(to bottom, rgba(255,255,255,0)75%, rgba(255,255,255,1)100%),
-        url(../assets/background.jpg);
+        url(../assets/background_about.jpg);
         background-size: cover;
         background-position: center;
     }

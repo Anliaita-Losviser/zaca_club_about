@@ -1,9 +1,9 @@
 <script setup>
-import aboutZACA from "./views/aboutZACA.vue";
 </script>
 
 <template>
-  <aboutZACA/>
+  <router-view>
+  </router-view>
 </template>
 
 <style scoped>

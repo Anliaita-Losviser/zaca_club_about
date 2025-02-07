@@ -1,5 +1,11 @@
 <script setup>
 import MainFooters from "@/components/MainFooters.vue";
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+const push_to_hallOfFame = () => { 
+  router.push('/hallOfFame')  // 跳转到hallOfFame 页面
+}
 </script>
 
 <template>
@@ -9,7 +15,7 @@ import MainFooters from "@/components/MainFooters.vue";
     </div>
     <div class="entry_hallOfFame">
       <el-text class="title">ZACA名人堂</el-text>
-      <el-button type="danger" size="large" class="button">由此进入</el-button>
+      <el-button type="danger" size="large" class="button" @click="push_to_hallOfFame">由此进入</el-button>
     </div>
     <MainFooters></MainFooters>
   </div>
@@ -29,10 +35,13 @@ import MainFooters from "@/components/MainFooters.vue";
     min-height: 480px;
     padding: 36px;
     margin: 36px;
+    margin-top: 240px;
     align-content: center;
     align-items: center;
     text-align: center;
     backdrop-filter: blur(5px);
+    border: 2px solid black;
+    border-radius: 20px;
     .introduction {
       color: black;
       font-size: 2rem;
@@ -50,6 +59,8 @@ import MainFooters from "@/components/MainFooters.vue";
     justify-content: space-around;
     align-items: center;
     backdrop-filter: blur(5px);
+    border: 2px solid black;
+    border-radius: 20px;
     .title {
       --tw-text-opacity: 1;
       color: rgb(91 122 232 / var(--tw-text-opacity, 1));

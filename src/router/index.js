@@ -1,6 +1,7 @@
 
 import { createWebHistory, createRouter } from 'vue-router'
 import aboutZACA from '@/views/aboutZACA.vue'
+import HallOfFame from '@/views/HallOfFame.vue'
 
 const routes = [
     {path: '/', redirect:'/about'},
@@ -8,7 +9,12 @@ const routes = [
         meta: {
             title: '关于'
         }
-    }
+    },
+    {path: '/hallOfFame',name: 'hallOfFame', component:HallOfFame,
+        meta: {
+            title: '名人堂'
+        }
+    },
 ]
 
 const router = createRouter({
