@@ -5,7 +5,7 @@ import FameList from "@/components/HallOfFame/FameList.vue";
 </script>
 
 <template>
-<el-container class="common-layout">
+    <el-container class="common-layout">
         <el-header class="header">
             <MainHeader class="MainHeader"> </MainHeader>
         </el-header>

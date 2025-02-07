@@ -3,8 +3,8 @@ import MainFooters from "@/components/MainFooters.vue";
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-const push_to_hallOfFame = () => { 
-  router.push('/hallOfFame')  // 跳转到hallOfFame 页面
+const pushToHallOfFame = () => { 
+  router.push({name: 'hallOfFame'})  // 跳转到hallOfFame 页面
 }
 </script>
 
@@ -15,7 +15,7 @@ const push_to_hallOfFame = () => {
     </div>
     <div class="entry_hallOfFame">
       <el-text class="title">ZACA名人堂</el-text>
-      <el-button type="danger" size="large" class="button" @click="push_to_hallOfFame">由此进入</el-button>
+      <el-button type="danger" size="large" class="button" @click="pushToHallOfFame">由此进入</el-button>
     </div>
     <MainFooters></MainFooters>
   </div>
@@ -25,23 +25,29 @@ const push_to_hallOfFame = () => {
 .container {
   display: flex;
   flex-direction: column;
+
   width: 100%;
-  height: 100%;
+  height: auto;
+
   justify-content: center;
   align-items: center;
   .content {
     width: 80%;
     height: 100%;
     min-height: 480px;
+
     padding: 36px;
     margin: 36px;
-    margin-top: 240px;
+    margin-top: 60px;
+
     align-content: center;
     align-items: center;
     text-align: center;
+
     backdrop-filter: blur(5px);
     border: 2px solid black;
     border-radius: 20px;
+
     .introduction {
       color: black;
       font-size: 2rem;
@@ -50,17 +56,22 @@ const push_to_hallOfFame = () => {
   .entry_hallOfFame {
     width: 80%;
     max-width: 800px;
-    height: 360px;
+    height: 240px;
+
     padding: 36px;
     margin: 36px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     justify-content: space-around;
     align-items: center;
+
     backdrop-filter: blur(5px);
     border: 2px solid black;
     border-radius: 20px;
+
     .title {
       --tw-text-opacity: 1;
       color: rgb(91 122 232 / var(--tw-text-opacity, 1));

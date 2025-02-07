@@ -2,6 +2,7 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import aboutZACA from '@/views/aboutZACA.vue'
 import HallOfFame from '@/views/HallOfFame.vue'
+import FameProfiles from '@/views/FameProfiles.vue'
 
 const routes = [
     {path: '/', redirect:'/about'},
@@ -15,6 +16,7 @@ const routes = [
             title: '名人堂'
         }
     },
+    {path: '/FameProfile', name: 'FameProfile', component:FameProfiles,},
 ]
 
 const router = createRouter({
